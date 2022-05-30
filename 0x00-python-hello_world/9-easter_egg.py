@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("The Zen of Python, by Tim Peterssssssssssssalskdkfjgjdjsjsjjjsss"[:32])
+str = 'The Zen of Python, by Tim Peterssssssssss'
+print("{}".format(str[:32]))
