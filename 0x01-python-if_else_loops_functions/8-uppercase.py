@@ -6,4 +6,4 @@ def uppercase(str):
             temp += chr(ord(s)-(97-65))
         else:
             temp += s
-    print(temp)
+    print("{temp}".format(temp))
