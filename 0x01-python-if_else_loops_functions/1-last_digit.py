@@ -9,3 +9,4 @@ elif last == 0:
 else:
     lastStr = "and is less than 6 and not 0"
 str = f"last digit of {number:d} is {last:d} {lastStr}"
+print(str)
