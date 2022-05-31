@@ -8,5 +8,5 @@ elif last == 0:
     lastStr = "and is 0"
 else:
     lastStr = "and is less than 6 and not 0"
-str = f"last digit of {number:d} is {last:d} {lastStr}"
+str = f"Last digit of {number:d} is {last:d} {lastStr}"
 print(str)
