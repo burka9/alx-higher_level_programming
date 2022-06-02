@@ -2,6 +2,7 @@
 
 if __name__ == '__main__':
     from sys import argv
+    from calculation_1 import add, sub, mul, div
 
     print(argv)
 
@@ -10,13 +11,13 @@ if __name__ == '__main__':
         exit(1)
 
     if argv[2] == '+':
-        result = int(argv[1]) + int(argv[3])
+        result = add(int(argv[1]), int(argv[3]))
     elif argv[2] == '-':
-        result = int(argv[1]) - int(argv[3])
+        result = sub(int(argv[1]), int(argv[3]))
     elif argv[2] == '*':
-        result = int(argv[1]) * int(argv[3])
+        result = mul(int(argv[1]), int(argv[3]))
     elif argv[2] == '/':
-        result = int(argv[1]) / int(argv[3])
+        result = div(int(argv[1]), int(argv[3]))
     else:
         print('Unknown operator. Available operators: +, -, * and /')
         exit(1)
