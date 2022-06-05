@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
-    if idx < 0 or idx >= len(my_list):
-        return my_list.copy()
-    else:
-        return (__import__('3-replace_in_list').replace_in_list(my_list.copy(), idx, element)).copy()
+    cp = my_list.copy()
+    if idx >= 0 and idx < len(my_list):
+        cp[idx] = element
+    return cp
