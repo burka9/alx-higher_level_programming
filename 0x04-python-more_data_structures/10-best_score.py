@@ -9,7 +9,7 @@ def best_score(a_dictionary):
     keys = list(a_dictionary.keys())
 
     my_key = ''
-    num = a_dictionary[my_key]
+    num = a_dictionary[key[0]]
 
     for key in keys:
         if a_dictionary[key] >= num:
