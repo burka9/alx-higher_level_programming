@@ -13,10 +13,19 @@ def best_score(a_dictionary):
     }
 
     for key in keys:
-        if a_dictionary[key] > temp['max'].value:
+        if a_dictionary[key] > temp['max']['val']:
             temp['max'] = {
                 'key': key,
                 'val': a_dictionary[key]
             }
 
-    return temp[0]
+    return temp['max']['key']
+
+
+
+a_dictionary = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
+best_key = best_score(a_dictionary)
+print("Best score: {}".format(best_key))
+
+best_key = best_score(None)
+print("Best score: {}".format(best_key))
