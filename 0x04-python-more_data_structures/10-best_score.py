@@ -5,18 +5,12 @@ def best_score(a_dictionary):
 
     keys = list(a_dictionary.keys())
 
-    temp = {
-        'max': {
-            'key': keys[0],
-            'val': a_dictionary[keys[0]]
-        }
-    }
+    my_key = keys[0]
+    num = a_dictionary[my_key]
 
     for key in keys:
-        if a_dictionary[key] > temp['max']['val']:
-            temp['max'] = {
-                'key': key,
-                'val': a_dictionary[key]
-            }
+        if a_dictionary[key] > num:
+            num = a_dictionary[key]
+            my_key = key
 
-    return temp['max']['key']
+    return my_key
