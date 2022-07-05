@@ -38,8 +38,8 @@ class SinglyLinkedList:
         """__init__"""
         self.__head = None
 
-    def __repr__(self):
-        """__repr__"""
+    def __str__(self):
+        """__str__"""
         h = self.__head
         tmp = []
 
