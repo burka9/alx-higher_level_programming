@@ -2,6 +2,6 @@
 """this is a comment"""
 
 
-class Rectange:
+class Rectangle:
     """this is a rectangle class"""
     pass

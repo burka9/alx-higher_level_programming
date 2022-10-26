@@ -2,7 +2,7 @@
 """this is a comment"""
 
 
-class Rectange:
+class Rectangle:
     """this is a rectangle class"""
 
     def __init__(self, width=0, height=0):
